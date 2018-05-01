@@ -1,4 +1,4 @@
-package ir.kasra_sh.ESPUtils;
+package ir.kasra_sh.ESPUtils.test;
 
 import ir.kasra_sh.ESPUtils.eventman.EventMan;
 import ir.kasra_sh.ESPUtils.eventman.EventReceiver;
@@ -20,13 +20,11 @@ public class TClass1 {
 
     @EventReceiver
     private void Rcv(EsonObj esonObj) {
-//        System.out.println("RCVEsonObj");
         System.out.println(esonObj.toString(3));
     }
 
     @EventReceiver
     public void Rcver2(List<String> s) {
-//        System.out.println("RCVArray");
         System.out.println(s.toArray()[0]);
     }
 

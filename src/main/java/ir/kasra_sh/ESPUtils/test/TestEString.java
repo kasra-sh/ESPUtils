@@ -1,4 +1,6 @@
-package ir.kasra_sh.ESPUtils;
+package ir.kasra_sh.ESPUtils.test;
+
+import ir.kasra_sh.ESPUtils.EString;
 
 public class TestEString {
     public TestEString() {

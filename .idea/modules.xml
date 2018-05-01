@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ESPUtils.iml" filepath="$PROJECT_DIR$/.idea/modules/ESPUtils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ESPUtils_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ESPUtils_main.iml" group="ESPUtils" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ESPUtils_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ESPUtils_test.iml" group="ESPUtils" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IdeaProjects-ESPUtils_main.iml" filepath="$PROJECT_DIR$/.idea/modules/IdeaProjects-ESPUtils_main.iml" group="ESPUtils" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IdeaProjects-ESPUtils_test.iml" filepath="$PROJECT_DIR$/.idea/modules/IdeaProjects-ESPUtils_test.iml" group="ESPUtils" />
+    </modules>
+  </component>
+</project>

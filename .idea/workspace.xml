@@ -22,7 +22,7 @@
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/test/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
+            <state relative-caret-position="38">
               <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
@@ -32,7 +32,7 @@
       <file leaf-file-name="TestEStore.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/test/TestEStore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
+            <state relative-caret-position="76">
               <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding />
             </state>
@@ -42,21 +42,19 @@
       <file leaf-file-name="TestEString.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/test/TestEString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
+            <state relative-caret-position="76">
               <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestEventMan.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestEventMan.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/test/TestEventMan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="76">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,8 +62,8 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="939">
-              <caret line="56" column="1" lean-forward="false" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+            <state relative-caret-position="304">
+              <caret line="16" column="73" lean-forward="false" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -74,7 +72,7 @@
       <file leaf-file-name="ULog.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/ULog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
+            <state relative-caret-position="665">
               <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
               <folding>
                 <element signature="class#LogFlags#0;class#ULog#0" expanded="false" />
@@ -106,7 +104,7 @@
       <file leaf-file-name="EventMan.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/eventman/EventMan.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
+            <state relative-caret-position="3097">
               <caret line="163" column="21" lean-forward="false" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -129,22 +127,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TClass1.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TClass1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/test/TClass1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="342">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#402#403#0" expanded="true" />
-                <element signature="e#447#448#0" expanded="true" />
-                <element signature="e#472#473#0" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#628#629#0" expanded="true" />
-                <element signature="e#739#740#0" expanded="true" />
-                <element signature="e#793#794#0" expanded="true" />
-                <element signature="e#831#832#0" expanded="true" />
+                <element signature="e#583#584#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -586,9 +576,9 @@
         <option value="$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/eventman/DefMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/eventman/EventMan.java" />
         <option value="$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/TestEventMan.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/test/TClass1.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/test/TestEventMan.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/test/TClass1.java" />
       </list>
     </option>
   </component>
@@ -614,7 +604,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -640,27 +629,11 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ESPUtils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ESPUtils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ESPUtils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ESPUtils" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ESPUtils" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ESPUtils" type="462c0819:PsiDirectoryNode" />
-              <item name="eventman" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -806,7 +779,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="173" y="151" width="1600" height="816" extended-state="6" />
+    <frame x="0" y="27" width="1600" height="816" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -816,10 +789,9 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7677794" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3280116" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3280116" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25289574" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280116" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25933075" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -831,6 +803,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280116" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -846,6 +819,128 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/test/TClass1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1064">
+          <caret line="56" column="1" lean-forward="false" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/test/TestEStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/test/TestEventMan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/test/TestEString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1064">
+          <caret line="56" column="1" lean-forward="false" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/ULog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+          <folding>
+            <element signature="class#LogFlags#0;class#ULog#0" expanded="false" />
+            <element signature="e#1917#1918#0" expanded="true" />
+            <element signature="e#1965#1966#0" expanded="true" />
+            <element signature="e#2010#2011#0" expanded="true" />
+            <element signature="e#2057#2058#0" expanded="true" />
+            <element signature="e#2105#2106#0" expanded="true" />
+            <element signature="e#2155#2156#0" expanded="true" />
+            <element signature="e#2201#2202#0" expanded="true" />
+            <element signature="e#2249#2250#0" expanded="true" />
+            <element signature="e#2299#2300#0" expanded="true" />
+            <element signature="e#2351#2352#0" expanded="true" />
+            <element signature="e#2412#2413#0" expanded="true" />
+            <element signature="e#2464#2465#0" expanded="true" />
+            <element signature="e#2522#2523#0" expanded="true" />
+            <element signature="e#2572#2573#0" expanded="true" />
+            <element signature="e#2636#2637#0" expanded="true" />
+            <element signature="e#2692#2693#0" expanded="true" />
+            <element signature="e#2752#2753#0" expanded="true" />
+            <element signature="e#2804#2805#0" expanded="true" />
+            <element signature="e#2872#2873#0" expanded="true" />
+            <element signature="e#2932#2933#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/eventman/EventMan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2926">
+          <caret line="163" column="21" lean-forward="false" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5264#5265#0" expanded="true" />
+            <element signature="e#5308#5309#0" expanded="true" />
+            <element signature="e#7296#7297#0" expanded="true" />
+            <element signature="e#7354#7355#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/eventman/DefMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/test/TClass1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -858,9 +953,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="24" column="41" lean-forward="false" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -954,8 +1047,6 @@
           <caret line="128" column="33" lean-forward="false" selection-start-line="128" selection-start-column="33" selection-end-line="128" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#5253#5254#0" expanded="false" />
-            <element signature="e#5290#5291#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -980,10 +1071,6 @@
         <state relative-caret-position="272">
           <caret line="229" column="28" lean-forward="false" selection-start-line="229" selection-start-column="28" selection-end-line="229" selection-end-column="28" />
           <folding>
-            <element signature="e#1274#1275#0" expanded="false" />
-            <element signature="e#1300#1301#0" expanded="false" />
-            <element signature="e#1330#1331#0" expanded="false" />
-            <element signature="e#1359#1360#0" expanded="false" />
             <element signature="method#isNum#0;class#EString#0" expanded="false" />
             <element signature="method#isAlpha#0;class#EString#0" expanded="false" />
             <element signature="method#countNums#1;class#EString#0" expanded="false" />
@@ -994,9 +1081,7 @@
             <element signature="method#findFirst#0;class#EString#0" expanded="false" />
             <element signature="method#findFrom#0;class#EString#0" expanded="false" />
             <element signature="method#findAll#0;class#EString#0" expanded="false" />
-            <element signature="e#5956#5957#0" expanded="false" />
             <element signature="e#6023#6024#0" expanded="false" />
-            <element signature="e#6062#6063#0" expanded="false" />
             <element signature="e#6120#6121#0" expanded="false" />
           </folding>
         </state>
@@ -1034,10 +1119,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="e#254#255#0" expanded="false" />
-            <element signature="e#282#283#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1047,7 +1129,6 @@
           <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#575#576#0" expanded="false" />
             <element signature="e#610#611#0" expanded="false" />
           </folding>
         </state>
@@ -1069,14 +1150,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/EMessenger/Receiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/EMessenger/Receiver.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/eventman/EventReceiver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1092,10 +1166,7 @@
         <state relative-caret-position="209">
           <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding>
-            <element signature="e#142#143#0" expanded="true" />
             <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1106,8 +1177,6 @@
           <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#478#479#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1124,7 +1193,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/ULog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
+        <state relative-caret-position="665">
           <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
           <folding>
             <element signature="class#LogFlags#0;class#ULog#0" expanded="false" />
@@ -1164,7 +1233,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="1291" column="13" lean-forward="false" selection-start-line="1291" selection-start-column="13" selection-end-line="1291" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1178,7 +1246,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/eventman/EventMan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
+        <state relative-caret-position="3097">
           <caret line="163" column="21" lean-forward="false" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1194,21 +1262,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="939">
-          <caret line="56" column="1" lean-forward="false" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
+        <state relative-caret-position="38">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
@@ -1216,7 +1275,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/test/TestEStore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
+        <state relative-caret-position="76">
           <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
@@ -1224,38 +1283,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/test/TestEString.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
+        <state relative-caret-position="76">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/test/TClass1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="73" lean-forward="false" selection-start-line="16" selection-start-column="73" selection-end-line="16" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/test/TestEventMan.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ir/kasra_sh/ESPUtils/test/TClass1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#793#794#0" expanded="true" />
-            <element signature="e#831#832#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="76">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -8,7 +8,9 @@ public class Test {
     public Test(String[] args) {
 //        new TestEString();
 //        new TestEStore();
-        new TestEventMan();
+//        new TestEventMan();
+        new TestEson();
+
     }
 
 }

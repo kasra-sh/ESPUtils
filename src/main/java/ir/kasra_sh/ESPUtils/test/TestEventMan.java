@@ -1,10 +1,10 @@
 package ir.kasra_sh.ESPUtils.test;
 
+import ir.kasra_sh.ESPUtils.eson.EsonObject;
 import ir.kasra_sh.ESPUtils.eventman.DefMessage;
 import ir.kasra_sh.ESPUtils.ULog;
 import ir.kasra_sh.ESPUtils.eventman.EventMan;
 import ir.kasra_sh.ESPUtils.eventman.EventReceiver;
-import ir.kasra_sh.ESPUtils.eson.EsonObj;
 
 import java.util.Arrays;
 
@@ -19,7 +19,7 @@ public class TestEventMan {
         EventMan.unsafeRegister(null);
         EventMan.post(Arrays.asList("Haha", "hehe"));
         EventMan.post("Hello !");
-        EventMan.post(new EsonObj().add("key1", "value1"));
+        EventMan.post(new EsonObject().put("key1", "value1"));
 
         tClass1.unr();
         ULog.i("TestEventMan", "after unregister");
@@ -27,7 +27,7 @@ public class TestEventMan {
 
         EventMan.post(Arrays.asList("Haha", "hehe"));
         EventMan.post("Hello !");
-        EventMan.post(new EsonObj().add("key1", "value1"));
+        EventMan.post(new EsonObject().put("key1", "value1"));
         EventMan.post(new DefMessage<Integer>(3));
 
     }

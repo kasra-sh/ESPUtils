@@ -1,7 +1,6 @@
 <component name="libraryTable">
   <library name="Gradle: org.json:json:20180130">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/Could not resolve org.json:json:20180130." />
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.json/json/20180130/26ba2ec0e791a32ea5dfbedfcebf36447ee5b12c/json-20180130.jar!/" />
     </CLASSES>
     <JAVADOC />

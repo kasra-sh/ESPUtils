@@ -204,6 +204,52 @@ public class EString {
     // replace
     //
 
+    public int get(int index) {
+        return str.charAt(index);
+    }
+
+    public void rewind(int offset) {
+        cursor-=offset;
+    }
+
+    public void skip(int offset) {
+        cursor+=offset;
+    }
+
+    public boolean skipWhite(){
+        while (str.length()>cursor) {
+            if (Character.isWhitespace(str.charAt(cursor)))
+                cursor++;
+            else {
+                break;
+            }
+        }
+
+        return finished();
+    }
+
+    public boolean finished() {
+        return str.length()<=cursor || cursor==-1;
+    }
+
+    public int getCur() {
+        if (cursor>= str.length())
+            return get(str.length()-1);
+        return get(cursor);
+    }
+
+    public int peekNext() {
+        if (cursor<(str.length()-1)) {
+            return str.charAt(cursor+1);
+        } else {
+            return '\0';
+        }
+    }
+
+    public boolean nextMatches(int c) {
+        return peekNext() == c;
+    }
+
     public int findFrom(String s, int start, int occurrence) {
         int i = start;
         int j = 0;

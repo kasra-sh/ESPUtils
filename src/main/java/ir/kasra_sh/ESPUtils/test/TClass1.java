@@ -1,6 +1,6 @@
 package ir.kasra_sh.ESPUtils.test;
 
-import ir.kasra_sh.ESPUtils.eson.EsonObj;
+import ir.kasra_sh.ESPUtils.eson.EsonObject;
 import ir.kasra_sh.ESPUtils.eventman.EventMan;
 import ir.kasra_sh.ESPUtils.eventman.EventReceiver;
 
@@ -16,7 +16,7 @@ public class TClass1 {
     }
 
     @EventReceiver
-    private void Rcv(EsonObj esonObj) {
+    private void Rcv(EsonObject esonObj) {
         System.out.println(esonObj.toString(3));
     }
 

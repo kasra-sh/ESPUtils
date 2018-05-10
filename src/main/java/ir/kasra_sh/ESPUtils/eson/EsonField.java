@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
-public @interface JSONName {
+public @interface EsonField {
     String name();
-    boolean required() default false;
+    Class genericListType() default Object.class;
 }

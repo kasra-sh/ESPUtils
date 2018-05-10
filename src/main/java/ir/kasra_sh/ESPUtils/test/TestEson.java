@@ -50,7 +50,6 @@ public class TestEson {
             for (int i = 0; i < 50000; i++) {
 //                new Gson().fromJson(bigStr, TestModel.class);
                 Eson.load(bigStr, TestModel.class);
-//                new Gson().fromJson(bigStr, TestModel.class);
             }
         }catch (StackOverflowError se){
         }

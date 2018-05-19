@@ -1,16 +1,17 @@
 group 'com.github.kasra-sh'
-version '1.0'
 apply plugin: 'idea'
 apply plugin: 'java'
 apply plugin: 'maven'
+
+version "git describe --tags".execute().text
 
 sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
     maven { url "https://jitpack.io" }
-
 }
+
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'

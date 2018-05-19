@@ -18,14 +18,14 @@ public enum ResponseString {
     public static String NOT_MODIFIED = "304 Not Modified";
     public static String TEMPORARY_REDIRECT = "307 Temporary Redirect";
     public static String PERMANENT_REDIRECT = "308 Permanent Redirect";
-    public static String BAD_REQUEST = "400 Bad Request";
+    public static String BAD_REQUEST = "400 Bad RequestData";
     public static String UNAUTHORIZED = "401 Unauthorized";
     public static String FORBIDDEN = "403 Forbidden";
     public static String NOT_FOUND = "404 Not Found";
     public static String METHOD_NOT_ALLOWED = "405 Method Not Allowed";
     public static String NOT_ACCEPTABLE = "406 Not Acceptable";
     public static String PROXY_AUTH_REQUIRED = "407 Proxy Authentication Required";
-    public static String REQUEST_TIMEOUT = "408 Request Timeout";
+    public static String REQUEST_TIMEOUT = "408 RequestData Timeout";
     public static String CONFLICT = "409 Conflict";
     public static String GONE = "410 Gone";
     public static String LENGTH_REQUIRED = "411 Length Required";
@@ -38,7 +38,7 @@ public enum ResponseString {
     public static String UPGRADE_REQUIRED = "426 Upgrade Required";
     public static String PRECONDITION_REQUIRED = "428 Precondition Required";
     public static String TOO_MANY_REQUESTS = "429 Too Many Requests";
-    public static String REQUEST_HEADER_FIELDS_TOO_LAGRGE = "431 Request Header Fields Too Large";
+    public static String REQUEST_HEADER_FIELDS_TOO_LAGRGE = "431 RequestData Header Fields Too Large";
     public static String UNAVAILABLE_FOR_LEGAL_REASONS = "451 Unavailable For Legal Reasons";
     public static String INTERNAL_SERVER_ERROR = "500 Internal Server Error";
     public static String NOT_IMPLEMENTED = "501 Not Implemented";

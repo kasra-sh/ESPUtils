@@ -21,6 +21,11 @@ public class EString {
         return str.length();
     }
 
+    public void clear() {
+        cursor = 0;
+        str.setLength(0);
+    }
+
     public void append(String s) {
         str = str.append(s);
     }

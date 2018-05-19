@@ -1,7 +1,14 @@
 package ir.kasra_sh.ESPUtils.estore;
 
 import ir.kasra_sh.ESPUtils.ULog;
+import ir.kasra_sh.ESPUtils.eson.Eson;
+import ir.kasra_sh.ESPUtils.eson.EsonArray;
+import ir.kasra_sh.ESPUtils.eson.EsonObject;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +18,7 @@ public class EStoreDB {
     private ArrayList<EKey> keys = new ArrayList<>();
     private ArrayList<EValue> values = new ArrayList<>();
     private long lastid = 0;
+    private String fp="";
 
     public synchronized EStoreDB put(String key, Object value) {
         int fnd = find(key);
@@ -96,5 +104,25 @@ public class EStoreDB {
 
     public ArrayList<EValue> getValues() {
         return values;
+    }
+
+    public synchronized void saveAll(String name,String file) throws IOException {
+        FileOutputStream fos = new FileOutputStream(Paths.get(file,name).toString());
+        EsonArray data = new EsonArray();
+        Eson eson = new Eson();
+        for (int i = 0; i < keys.size(); i++) {
+            String k = keys.get(i).getKey();
+            String v = eson.objectFrom(values.get(i).getValue()).toString();
+            EsonObject object = new EsonObject();
+            data.put(object.put(k,v));
+            object = null;
+        }
+
+        fos.write(data.toString().getBytes());
+
+    }
+
+    public void saveAll(String name) throws IOException {
+        saveAll(name, fp);
     }
 }

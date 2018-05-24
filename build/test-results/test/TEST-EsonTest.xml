@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EsonTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-05-24T01:21:20" hostname="blk3" time="0.05">
+<testsuite name="EsonTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-05-24T11:07:36" hostname="blk3" time="0.035">
   <properties/>
-  <testcase name="dynamicJson" classname="EsonTest" time="0.006"/>
-  <testcase name="generateJson" classname="EsonTest" time="0.02"/>
-  <testcase name="loadJson" classname="EsonTest" time="0.023"/>
+  <testcase name="dynamicJson" classname="EsonTest" time="0.004"/>
+  <testcase name="generateJson" classname="EsonTest" time="0.015"/>
+  <testcase name="loadJson" classname="EsonTest" time="0.015"/>
   <system-out><![CDATA[{"x":"x\n\u0000\t\t\t\t","1289^&$%^#@@3":"sss"}
 {
      "x":"x\n\u0000\t\t\t\t",
@@ -36,9 +36,9 @@
          "S":"\\ 2"
       }
    ],
-   "date":"5/24/18 5:51 AM"
+   "date":"5/24/18 3:37 PM"
 }
-{"td1":{"l":0,"i":1,"L":null,"S":"\\t\\n\n"},"td1List":[{"l":0,"i":0,"L":0,"S":"\n 0"},{"l":1,"i":1,"L":1,"S":"\t 1"},{"l":2,"i":2,"L":2,"S":"\\ 2"}],"date":"5/24/18 5:51 AM"}
+{"td1":{"l":0,"i":1,"L":null,"S":"\\t\\n\n"},"td1List":[{"l":0,"i":0,"L":0,"S":"\n 0"},{"l":1,"i":1,"L":1,"S":"\t 1"},{"l":2,"i":2,"L":2,"S":"\\ 2"}],"date":"5/24/18 3:37 PM"}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

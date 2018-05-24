@@ -1,14 +1,30 @@
 # ESPUtils
 [![](https://jitpack.io/v/kasra-sh/esputils.svg)](https://jitpack.io/#kasra-sh/esputils)
-###
 ### A collection of components which make java easy (again ?).
-### Includes
+### > How to import
+Include these in your project's build.gradle file
+```java
+repositories {
+	...
+	maven { url 'https://jitpack.io' }
+}
+```
+```java
+dependencies {
+	...
+	compile 'com.github.kasra-sh:esputils:0.9.5'
+}
+```
+####
 + ## Eson
-#### Easy, Fast, Lightweight JSON library
+#### { Easy, Fast, Lightweight JSON library }
+#### Features :
  - ##### A combination of Gson and org.json features (EsonObject/EsonArray/ObjectMapping).
- - ##### Easy to use(no factories needed !) methods . Just annotate the fields (or not !).
- - ##### Easily map JSON to complex data classes containing other classes or even Lists of objects!
- - ##### Fluently build and transfer data from *EsonObject*/*EsonArray*/*POJO*s to *String*(serialize) and back(deserialize)!
+ - ##### Easy to use methods Just annotate the fields (or not !).
+ - ##### Easily map JSON to complex data classes containing other classes or even Generic Lists of objects!
+ - ##### Fluently generate and transfer data from *EsonObject*/*EsonArray*/*POJO*s to *String*(serialize) and back(deserialize)!
+#### TODO :
+- ##### Adding more serializers for more data types (Date, Set, ...)
 + ## EString
 #### A wrapper around `StringBuilder` with buffer-like abilities and more ...
 - ##### Contains default StringBuilder functions plus : `insert()`, `seekTo()`, `seekBefore()`, `seekAfter()`, `skip()`, `rewind()`, `peekNext()` and more functions to come ... !

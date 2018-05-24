@@ -2,6 +2,7 @@ package ir.kasra_sh.ESPUtils.eson;
 
 import ir.kasra_sh.ESPUtils.ULog;
 import ir.kasra_sh.ESPUtils.eson.internal.EClass;
+import ir.kasra_sh.ESPUtils.eson.internal.EsonWriter;
 import ir.kasra_sh.ESPUtils.estore.EKey;
 import ir.kasra_sh.ESPUtils.estore.EStoreDB;
 import ir.kasra_sh.ESPUtils.estore.EValue;
@@ -91,12 +92,13 @@ public class EsonObject {
     }
 
     public String toString(int indent) {
-        return toString(0, indent);
+        return new EsonWriter().writeObject(this, indent, 0);
+//        return toString(0, indent);
     }
+
 
     protected String toString(int layer, int indent) {
         StringBuilder r = new StringBuilder();
-
         String ind = getIndent(indent);
         String layerInd = getIndent(layer * indent);
 
@@ -119,7 +121,7 @@ public class EsonObject {
                 r.append("[");
                 r.append(element.getArray().toString(layer + 1, indent));
             } else if (element.getType() == EsonType.STRING) {
-                r.append('"').append(values.get(i).getValue()).append('"');
+                r.append('"').append(values.get(i).getValue().toString().replace("\"","\\\"")).append('"');
             } else {
                 r.append(values.get(i).getValue());
             }

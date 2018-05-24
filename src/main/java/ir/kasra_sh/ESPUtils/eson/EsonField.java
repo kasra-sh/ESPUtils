@@ -13,5 +13,5 @@ import java.lang.annotation.Target;
 @Target(ElementType.FIELD)
 public @interface EsonField {
     String name();
-    Class genericListType() default Object.class;
+    Class arrayType() default Object.class;
 }

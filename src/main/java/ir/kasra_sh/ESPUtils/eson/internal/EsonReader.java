@@ -57,13 +57,20 @@ public class EsonReader {
         if (!reader.finished()) {
             int c = reader.getCur();
 
+            if (c == 0) {
+                while (!reader.finished()) {
+                    if (reader.getCur() == 0) {
+                        reader.skip(1);
+                    }
+                }
+            }
+
             if (c == '{') {
                 if (tps.contains(TokenType.OBJ_START)) {
                     mAppendToken(c);
                     reader.skip(1);
                     return new Token(lastToken.toString(), TokenType.OBJ_START);
                 } else {
-                    System.out.println(reader.getStr().substring(0, reader.getCursor()+3));
                     throw new IllegalJSONTokenException("Expected {, Got "+(char)c+" at "+reader.getCursor());
                 }
             }
@@ -94,7 +101,6 @@ public class EsonReader {
                     reader.skip(1);
                     return new Token(lastToken.toString(), TokenType.COLON);
                 } else {
-                    System.out.println(reader.getStr().substring(0, reader.getCursor()));
                     throw new IllegalJSONTokenException("Expected Colon, Got "+(char)c+" at "+reader.getCursor());
                 }
             }
@@ -149,13 +155,15 @@ public class EsonReader {
                 }
             }
 
+        } else {
+            // ?
         }
 
         String[] ex = new String[tps.size()];
         for (int i = 0; i < tps.size(); i++) {
             ex[i] = tps.get(i).name();
         }
-        throw new IllegalJSONTokenException("Expected "+Arrays.toString(ex)+", got EOF !");
+        throw new IllegalJSONTokenException("Expected "+Arrays.toString(ex)+", got EOF @ "+reader.getCursor());
     }
 
     private void readNumLiteral() throws IllegalJSONTokenException, JSONNumberFormatException {
@@ -233,16 +241,43 @@ public class EsonReader {
         }
     }
 
+    private boolean isHexDigit(char c){
+        if ((c >= '0' && c <= '9') || (c>='a' && c<='f') || (c>='A' && c<='F')) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     private void readStringLiteral() throws IllegalEscapedCharacter, IllegalJSONTokenException, JSONStringFormatException {
         if (reader.getCur() == '"') {
             reader.skip(1);
         }
         while (!reader.finished()) {
+
+            if (reader.getCur() == '\0') {
+                throw new JSONStringFormatException("EOF @ "+reader.getCursor());
+            }
             if (reader.getCur()=='\\') {
                 if (isEsc(reader.peekNext())) {
-                    mAppendToken(parseEscaped("\\"+reader.peekNext()));
-                    reader.skip(2);
-                    continue;
+                    StringBuilder esc = new StringBuilder();
+                    esc.setLength(0);
+                    esc.append("\\").append((char)reader.peekNext());
+                    if (reader.peekNext() == 'u') {
+                        reader.skip(2);
+                        for (int i = 0; i < 4; i++) {
+                            if (isHexDigit((char) reader.getCur())) {
+                                esc.append((char) reader.getCur());
+                            } else {
+                                throw new JSONStringFormatException("Escaped char must have 4 digits!");
+                            }
+                            reader.skip(1);
+                        }
+                        mAppendToken(parseUnicodeEscaped(esc.toString()));
+                    } else {
+                        reader.skip(2);
+                        mAppendToken(parseEscaped(esc.toString()));
+                    }
                 }
 
             }
@@ -361,8 +396,8 @@ public class EsonReader {
     }
 
     public int parseUnicodeEscaped(String uEscaped) throws IllegalEscapedCharacter {
-        if (uEscaped.length() < 6) throw new IllegalEscapedCharacter(uEscaped);
-        if (!uEscaped.startsWith("\\u")) throw new IllegalEscapedCharacter(uEscaped);
+        if (uEscaped.length() < 6) throw new IllegalEscapedCharacter("< 6 : "+uEscaped);
+        if (!uEscaped.startsWith("\\u")) throw new IllegalEscapedCharacter("> 6 : "+uEscaped);
         String hex4Digit = uEscaped.substring(2);
         return Integer.valueOf(hex4Digit, 16);
     }

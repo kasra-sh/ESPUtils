@@ -41,7 +41,7 @@ public class ULog {
         private static boolean logError = true;
         private static boolean logInfo = true;
         private static boolean logWarning = true;
-        private static boolean logDebug = true;
+        private static boolean logDebug = false;
         private static boolean logException = true;
 
         public static void setFlags(boolean info,

@@ -26,8 +26,14 @@ public class EString {
         str.setLength(0);
     }
 
-    public void append(String s) {
-        str = str.append(s);
+    public EString append(String s) {
+        str.append(s);
+        return this;
+    }
+
+    public EString append(char c) {
+        str = str.append(c);
+        return this;
     }
 
     public EString delete(int start, int len) {

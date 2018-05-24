@@ -1,5 +1,7 @@
 package ir.kasra_sh.ESPUtils.eson;
 
+import ir.kasra_sh.ESPUtils.eson.internal.EsonWriter;
+
 import java.util.ArrayList;
 
 public class EsonArray {
@@ -70,7 +72,8 @@ public class EsonArray {
     }
 
     public String toString(int indent) {
-        return toString(0, indent);
+        return new EsonWriter().writeArray(this, indent, 0);
+//        return toString(0, indent);
     }
 
     protected String toString(int layer, int indent) {

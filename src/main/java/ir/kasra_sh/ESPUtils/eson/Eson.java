@@ -6,6 +6,7 @@ import ir.kasra_sh.ESPUtils.estore.EStoreDB;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -24,6 +25,7 @@ public class Eson {
         try {
             return new EsonParser(json).parse();
         } catch (Exception e) {
+            e.printStackTrace();
             return EsonElement.makeNull();
         }
     }
@@ -62,7 +64,7 @@ public class Eson {
     }
 
     public static String generate(Object src, int indent) {
-        return wrap(src).toString();
+        return wrap(src).toString(indent);
     }
 
 
@@ -95,17 +97,18 @@ public class Eson {
                 Field[] fields = src.getClass().getDeclaredFields();
                 for (Field f :
                         fields) {
-                    if (f.getName().startsWith("$") || f.getName().equals("serialVersionUID")) {
+                    if (f.getName().contains("$") || f.getName().equals("serialVersionUID")) {
                         continue;
                     }
                     f.setAccessible(true);
                     Annotation a;
                     String name = f.getName();
+                    Type gat = null;
                     boolean required = false;
                     try {
                         a = f.getAnnotation(EsonField.class);
                         name = ((EsonField) a).name();
-                        //ULog.w(TAG, "Field "+f.getName()+" not annotated with JsonElement (using field name)");
+                        gat = ((EsonField) a).arrayType();
                     } catch (Exception e) {
                     }
 

@@ -7,7 +7,6 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class EClass {
     private static final String TAG = "Eson";
@@ -63,7 +62,7 @@ public class EClass {
             try {
                 Annotation a = fs[i].getAnnotation(EsonField.class);
                 fname = ((EsonField) a).name();
-                genType = ((EsonField) a).genericListType();
+                genType = ((EsonField) a).arrayType();
             } catch (Exception e) {
             }
 

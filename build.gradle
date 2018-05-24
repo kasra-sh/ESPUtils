@@ -19,10 +19,9 @@ dependencies {
 
 
 test {
-    useJUnit();
+    useJUnit()
 }
 
-// makes fat jar with all dependencies
 task fatJar(type: Jar) {
     manifest {
         attributes 'Implementation-Title': 'ESP Utilities',

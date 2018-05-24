@@ -27,9 +27,6 @@ task fatJar(type: Jar) {
     manifest {
         attributes 'Implementation-Title': 'ESP Utilities',
                 'Implementation-Version': version
-        /*
-        'Main-Class': 'ir.kasra_sh.Main'
-        */
     }
     baseName = project.name + '-all'
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }

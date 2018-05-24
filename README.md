@@ -16,7 +16,7 @@ dependencies {
 }
 ```
 ####
-## { Eson }
+## 1. { Eson }
 #### { Easy, Fast, Lightweight JSON library }
 #### Features :
  - ##### A combination of Gson and org.json features (EsonObject/EsonArray/ObjectMapping).
@@ -26,11 +26,11 @@ dependencies {
 #### TODO :
 - ##### Adding more serializers for more data types (Date, Set, ...)
 
-## { EString }
+## 2. { EString }
 #### A wrapper around `StringBuilder` with buffer-like abilities and more ...
 - ##### Contains default StringBuilder functions plus : `insert()`, `seekTo()`, `seekBefore()`, `seekAfter()`, `skip()`, `rewind()`, `peekNext()` and more functions to come ... !
 
-## { EventMan }
+## 3. { EventMan }
 #### An easy way to pass objects/events between classes
  - ##### Can be used instead of *UGLY* callbacks or for passing objects in multithreaded applications!
  - ##### Define subscribers by ObjectType/Tag/Id, Tag and Id can be used even without passing an object for just posting an event!

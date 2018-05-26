@@ -23,7 +23,7 @@ dependencies {
  - Easy to use methods Just annotate the fields (or not !).
  - Easily map JSON to complex data classes containing other classes or even Generic Lists of objects!
  - Fluently generate and transfer data from *EsonObject*/*EsonArray*/*POJO*s to *String*(serialize) and back(deserialize)!
-#### Usage
+#### Usage :
 ```java
 // Serialize raw
 String json = new EsonObject().put("test_value", "string").toString();

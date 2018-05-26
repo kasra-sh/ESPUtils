@@ -60,6 +60,10 @@ public class EsonObject {
 
     private EsonElement Null = EsonElement.makeNull();
 
+    public <T> T get(String key, T defValue) {
+        return kv.get(key, defValue);
+    }
+
     public EsonElement get(String key) {
         return kv.get(key, Null);
     }
@@ -67,19 +71,22 @@ public class EsonObject {
     public String getString(String key) {
         return kv.get(key, Null).getString();
     }
-//    public EsonElement get(String key) {
-//        return kv.get(key, Null);
-//    }
-//    public EsonElement get(String key) {
-//        return kv.get(key, Null);
-//    }
-//    public EsonElement get(String key) {
-//        return kv.get(key, Null);
-//    }
 
-//    public void put(String key, Object obj){
-//        kv.put(key, EsonElement.make(obj));
-//    }
+    public Integer getInt(String key) {
+        return kv.get(key, (Integer) null);
+    }
+
+    public Long getLong(String key) {
+        return kv.get(key, (Long) null);
+    }
+
+    public Boolean getBool(String key) {
+        return kv.get(key, (Boolean) null);
+    }
+
+    public Double getDouble(String key) {
+        return kv.get(key, (Double) null);
+    }
 
     public EsonObject put(String key, EsonArray array) {
         kv.put(key, EsonElement.make(array));
@@ -161,7 +168,7 @@ public class EsonObject {
         /**
          * A Null object is equal to the null name and to itself.
          *
-         * @param object An object to test for nullness.
+         * @param object An object to example for nullness.
          * @return true if the object parameter is the JSONObject.NULL object or
          * null.
          */

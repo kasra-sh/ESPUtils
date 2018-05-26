@@ -8,36 +8,36 @@ public class EsonElement {
 
     private EsonType type;
 
-    public EsonElement(Object value, EsonType type){
+    public EsonElement(Object value, EsonType type) {
         this.value = value;
         this.type = type;
     }
 
-    public static EsonElement make(Integer v){
+    public static EsonElement make(Integer v) {
         return new EsonElement(v, EsonType.INTEGER);
     }
 
-    public static EsonElement make(Long v){
+    public static EsonElement make(Long v) {
         return new EsonElement(v, EsonType.LONG);
     }
 
-    public static EsonElement make(Boolean v){
+    public static EsonElement make(Boolean v) {
         return new EsonElement(v, EsonType.BOOLEAN);
     }
 
-    public static EsonElement make(Double v){
+    public static EsonElement make(Double v) {
         return new EsonElement(v, EsonType.DOUBLE);
     }
 
-    public static EsonElement make(String v){
+    public static EsonElement make(String v) {
         return new EsonElement(v, EsonType.STRING);
     }
 
-    public static EsonElement make(EsonObject v){
+    public static EsonElement make(EsonObject v) {
         return new EsonElement(v, EsonType.OBJECT);
     }
 
-    public static EsonElement make(EsonArray v){
+    public static EsonElement make(EsonArray v) {
         return new EsonElement(v, EsonType.ARRAY);
     }
 
@@ -49,7 +49,7 @@ public class EsonElement {
         Integer integer = null;
         try {
             integer = getDoubleValue().intValue();
-        } catch (Exception e){
+        } catch (Exception e) {
             //e.printStackTrace();
         }
         return integer;
@@ -59,7 +59,7 @@ public class EsonElement {
         Long lng = null;
         try {
             lng = getDoubleValue().longValue();
-        } catch (Exception e){
+        } catch (Exception e) {
 //            e.printStackTrace();
         }
         return lng;
@@ -69,7 +69,8 @@ public class EsonElement {
         Boolean val = null;
         try {
             val = Boolean.class.cast(value);
-        } catch (Exception e){}
+        } catch (Exception e) {
+        }
         return val;
     }
 
@@ -101,43 +102,27 @@ public class EsonElement {
         return type;
     }
 
-    public void setType(EsonType type) {
+    void setType(EsonType type) {
         this.type = type;
     }
 
     public static EsonElement makeFromObject(Object src) {
         if (src == null) return EsonElement.makeNull();
         Class<?> sType = src.getClass();
-
-        if (sType == Short.TYPE || Short.class.isAssignableFrom(sType)) {
-            return EsonElement.make(Integer.valueOf(Short.class.cast(src)));
-        } else if (sType == Integer.TYPE || Integer.class.isAssignableFrom(sType)) {
-            return EsonElement.make(Integer.class.cast(src));
-        } else if (sType == Long.TYPE || Long.class.isAssignableFrom(sType)) {
-            return EsonElement.make(Long.class.cast(src));
-        } else if (sType == Float.TYPE || Float.class.isAssignableFrom(sType)) {
-            return EsonElement.make(Double.valueOf(Float.class.cast(src)));
-        } else if (sType == Double.TYPE || Double.class.isAssignableFrom(sType)) {
-            return EsonElement.make(Double.class.cast(src));
-        } else if (sType == Character.TYPE || Character.class.isAssignableFrom(sType)) {
-            return EsonElement.make(String.valueOf(Character.class.cast(src)));
-        } else if (sType == Byte.TYPE || Byte.class.isAssignableFrom(sType)) {
-            return EsonElement.make(Integer.valueOf(Byte.class.cast(src)));
-        } else if (sType == Boolean.TYPE || Boolean.class.isAssignableFrom(sType)) {
-            return EsonElement.make(Boolean.class.cast(src));
-        } else if (String.class.isAssignableFrom(sType)) {
-            return EsonElement.make(String.valueOf(src));
+        EsonSerializer serializer = Converters.getSerializer(sType);
+        if (serializer != null) {
+            return serializer.serialize(src);
         } else {
-            // SKIPPED !
-//            System.out.println("Obj "+sType.getName());
             return EsonElement.make(new Eson().objectFrom(src));
+
         }
+
     }
 
     public String toString(int indent) {
         if (type == EsonType.OBJECT) {
             return getObject().toString(indent);
-        } else if (type == EsonType.ARRAY){
+        } else if (type == EsonType.ARRAY) {
             return getArray().toString(indent);
         } else
             return String.valueOf(value);
@@ -165,7 +150,7 @@ public class EsonElement {
         try {
 //            tClass.cast(ret);
             return ret;
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             try {
                 return tClass.newInstance();

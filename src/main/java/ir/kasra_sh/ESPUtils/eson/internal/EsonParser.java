@@ -19,7 +19,11 @@ public class EsonParser {
     private EsonReader.Token lastToken;
 
     public EsonParser(String json) {
-        esonReader = new EsonReader(json);
+        if (json.length()>0)
+            esonReader = new EsonReader(json);
+        else {
+            esonReader = new EsonReader("{}");
+        }
     }
 
     public EsonElement parse() throws Exception {

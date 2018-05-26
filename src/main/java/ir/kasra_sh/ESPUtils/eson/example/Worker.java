@@ -1,4 +1,9 @@
+package ir.kasra_sh.ESPUtils.eson.example;
+
 import ir.kasra_sh.ESPUtils.eson.EsonField;
+
+import java.util.Calendar;
+import java.util.Date;
 
 public class Worker {
     private long id;
@@ -6,7 +11,7 @@ public class Worker {
     @EsonField(name = "is_working")
     private boolean working;
     private String name;
-
+    private Date regDate;
     public Worker() {
     }
 
@@ -14,5 +19,10 @@ public class Worker {
         this.id = id;
         this.working = working;
         this.name = name;
+        try {
+            this.regDate = Calendar.getInstance().getTime();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

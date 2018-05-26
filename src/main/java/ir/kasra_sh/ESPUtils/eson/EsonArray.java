@@ -73,7 +73,6 @@ public class EsonArray {
 
     public String toString(int indent) {
         return new EsonWriter().writeArray(this, indent, 0);
-//        return toString(0, indent);
     }
 
     protected String toString(int layer, int indent) {

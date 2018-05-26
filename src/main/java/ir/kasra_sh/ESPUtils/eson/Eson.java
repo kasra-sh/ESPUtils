@@ -15,13 +15,24 @@ import java.util.List;
  * Created by blkr on 3/31/18.
  */
 
-public class Eson {
+public final class Eson {
 
     private static final String TAG = "ESON";
 
     protected static EStoreDB classes = new EStoreDB();
 
+    private static boolean inited = false;
+    private static void init() {
+        if (inited) return;
+        Defaults.init();
+    }
+
+    public Eson() {
+        init();
+    }
+
     public static EsonElement load(String json) {
+        init();
         try {
             return new EsonParser(json).parse();
         } catch (Exception e) {
@@ -32,6 +43,7 @@ public class Eson {
 
 
     public static <T> T load(String json, Class<T> tClass) {
+        init();
         try {
             return tClass.cast(new EsonParser(json).parse().mapTo(tClass));
         } catch (Exception e) {
@@ -41,6 +53,7 @@ public class Eson {
     }
 
     public static <T> ArrayList<T> loadArray(String json, Class<T> itemType) {
+        init();
         EsonElement element = EsonElement.make(new EsonArray());
         try {
             element = new EsonParser(json).parse();
@@ -120,10 +133,9 @@ public class Eson {
                             json.put(name, ((EsonArray) f.get(src)));
                         } else if (List.class.isAssignableFrom(t)) {
                             json.put(name, arrayFrom((List) f.get(src)));
-                        } else if (isPrimitive(t)) {
-                            json.put(name, EsonElement.makeFromObject(f.get(src)));
                         } else {
-                            json.put(name, objectFrom(f.get(src)));
+                            json.put(name, EsonElement.makeFromObject(f.get(src)));
+//                            json.put(name, objectFrom(f.get(src)));
                         }
                     } catch (Exception e) {
                         ULog.wtf(TAG, e);
@@ -145,7 +157,7 @@ public class Eson {
 //        return new Eson().arrayFrom(list);
 //    }
 
-    private boolean isPrimitive(Class<?> src) {
+    static boolean isPrimitive(Class<?> src) {
         return src.isPrimitive() ||
                 src.isAssignableFrom(Byte.class) ||
                 src.isAssignableFrom(Short.class) ||

@@ -1,3 +1,5 @@
+package ir.kasra_sh.ESPUtils.eson.example;
+
 import ir.kasra_sh.ESPUtils.eson.EsonField;
 
 import java.util.ArrayList;
@@ -6,10 +8,10 @@ public class Boss {
     private long id;
 
     @EsonField(name = "boss_name")
-    private String name;
+    public String name;
 
     @EsonField(name = "worker_list", arrayType = Worker.class)
-    private ArrayList<Worker> workers;
+    public ArrayList<Worker> workers;
 
     public Boss() {
     }

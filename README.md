@@ -12,19 +12,48 @@ repositories {
 ```java
 dependencies {
 	...
-	compile 'com.github.kasra-sh:esputils:0.9.5'
+	compile 'com.github.kasra-sh:esputils:0.9.9'
 }
 ```
 ####
 ## 1. { Eson }
 #### { Easy, Fast, Lightweight JSON library }
 #### Features :
- - ##### A combination of Gson and org.json features (EsonObject/EsonArray/ObjectMapping).
- - ##### Easy to use methods Just annotate the fields (or not !).
- - ##### Easily map JSON to complex data classes containing other classes or even Generic Lists of objects!
- - ##### Fluently generate and transfer data from *EsonObject*/*EsonArray*/*POJO*s to *String*(serialize) and back(deserialize)!
+ - A combination of Gson and org.json features (EsonObject/EsonArray/ObjectMapping).
+ - Easy to use methods Just annotate the fields (or not !).
+ - Easily map JSON to complex data classes containing other classes or even Generic Lists of objects!
+ - Fluently generate and transfer data from *EsonObject*/*EsonArray*/*POJO*s to *String*(serialize) and back(deserialize)!
+#### Usage
+```java
+// Serialize raw
+String json = new EsonObject().put("test_value", "string").toString();
+
+// Serialize object
+String json = Eson.generate(myObject);
+
+// Serialize with indent (prettify)
+String jsonPretty = Eson.generate(myObject, 3);
+
+// Deserialize raw
+// Object
+EsonObject object = Eson.wrap(myObject);
+long l = object.getLong("long_value");
+
+// Array
+EsonArray array = Eson.wrap(myListOrArrayOfObjects);
+EsonElement e = array.get(i);
+long l = array.get(i).getObject().getLong("long_value");
+...
+
+// Deserialize and map to object
+MyClass myObject = Eson.load(json, MyClass.class);
+
+// Deserialize and map to arraylist
+ArrayList<MyClass> myObjectList = Eson.loadArray(json, MyClass.class);
+
+```
 #### TODO :
-- ##### Adding more serializers for more data types (Date, Set, ...)
+- Adding more serializers for more data types (Date, Set, ...)
 
 ## 2. { EString }
 #### A wrapper around `StringBuilder` with buffer-like abilities and more ...

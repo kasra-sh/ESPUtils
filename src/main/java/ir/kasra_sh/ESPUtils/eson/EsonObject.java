@@ -103,55 +103,6 @@ public class EsonObject {
 //        return toString(0, indent);
     }
 
-
-    protected String toString(int layer, int indent) {
-        StringBuilder r = new StringBuilder();
-        String ind = getIndent(indent);
-        String layerInd = getIndent(layer * indent);
-
-        ArrayList<EKey> keys = kv.getKeys();
-        ArrayList<EValue> values = kv.getValues();
-        if (layer == 0)
-            r.append("{");
-        if (keys.size() == 0) return r.append("}").toString();
-        for (int i = 0; i < keys.size(); i++) {
-            if (indent > 0) r.append("\n");
-            EsonElement element = (EsonElement) values.get(i).getValue();
-            r.append(layerInd)
-                    .append(ind).append('"').append(keys.get(i).getKey()).append("\":");
-            if (indent>0) r.append(' ');
-
-            if (element.getType() == EsonType.OBJECT) {
-                r.append("{");
-                r.append(element.getObject().toString(layer + 1, indent));
-            } else if (element.getType() == EsonType.ARRAY) {
-                r.append("[");
-                r.append(element.getArray().toString(layer + 1, indent));
-            } else if (element.getType() == EsonType.STRING) {
-                r.append('"').append(values.get(i).getValue().toString().replace("\"","\\\"")).append('"');
-            } else {
-                r.append(values.get(i).getValue());
-            }
-            if ((i + 1) < keys.size()) {
-                r.append(',');
-            }
-        }
-        if (indent > 0) r.append("\n");
-        r.append(layerInd).append("}");
-
-        return r.toString();
-
-    }
-
-    private String getIndent(int i) {
-        if (i == 0) return "";
-        StringBuilder ind = new StringBuilder();
-        for (int j = 0; j < i; j++) {
-            ind.append(' ');
-        }
-        return ind.toString();
-    }
-
     private static final class Null {
 
         /**

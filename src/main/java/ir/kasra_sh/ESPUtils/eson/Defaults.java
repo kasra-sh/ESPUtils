@@ -82,7 +82,7 @@ public final class Defaults {
         @Override
         public EsonElement serialize(Object field) {
             try {
-                return EsonElement.make(SimpleDateFormat.getDateTimeInstance().format(field));
+                return EsonElement.make(new String(SimpleDateFormat.getDateTimeInstance().format(field)));
             } catch (Exception e) {
                 System.out.println(field);
                 e.printStackTrace();

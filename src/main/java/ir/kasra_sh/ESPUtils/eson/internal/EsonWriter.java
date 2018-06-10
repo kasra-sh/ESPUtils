@@ -244,6 +244,8 @@ public class EsonWriter {
                 writeObject(element.getObject(), indent, indent + preindent);
             } else if (element.getType() == EsonType.ARRAY) {
                 writeArray(element.getArray(), indent, indent + preindent);
+            } else if (element.getType() == EsonType.STRING) {
+                writeString(element.toString());
             } else {
                 mAppend(element.toString());
             }

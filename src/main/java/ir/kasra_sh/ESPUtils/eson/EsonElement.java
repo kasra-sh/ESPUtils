@@ -142,7 +142,6 @@ public class EsonElement {
     public Object mapTo(Class<?> tClass) {
         Object ret = null;
         if (type == EsonType.ARRAY || tClass.isAssignableFrom(List.class)) {
-            System.out.println("isArray");
             ret = tClass.cast(getArray().mapTo(tClass));
         } else if (type == EsonType.OBJECT) {
             ret = getObject().mapTo(tClass);

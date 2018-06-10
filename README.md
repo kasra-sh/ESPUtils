@@ -12,7 +12,7 @@ repositories {
 ```java
 dependencies {
 	...
-	compile 'com.github.kasra-sh:esputils:0.9.9'
+	compile 'com.github.kasra-sh:esputils:1.0.0'
 }
 ```
 ####

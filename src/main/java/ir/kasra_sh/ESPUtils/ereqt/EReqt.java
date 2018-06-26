@@ -1,7 +1,6 @@
 package ir.kasra_sh.ESPUtils.ereqt;
 
 import java.util.concurrent.Executor;
-import java.util.concurrent.Executors;
 
 public class EReqt {
 
@@ -10,12 +9,8 @@ public class EReqt {
     private int retries;
     private int timeout;
 
-    static {
-        def = new EReqt(3, 7000, 3);
-    }
-
     private EReqt(int i, int timeout, int retries){
-        executor = Executors.newFixedThreadPool(i);
+        executor = new ThreadPoolCompatExecutor(i);
         this.timeout = timeout;
         this.retries = retries;
     }
@@ -24,7 +19,21 @@ public class EReqt {
         return new EReqt(poolSize, timeout_ms, retries);
     }
 
-    public static EReqt getDefault() {
+    public synchronized static EReqt getDefault() {
+        if (def==null) {
+            def = new EReqt(2, 10000, 5);
+        }
         return def;
     }
+
+    public EReqt enqueue(ERequest request, ResponseListener listener) {
+        executor.execute(new Runnable() {
+            @Override
+            public void run() {
+                listener.onResponse(new RequestResult(request));
+            }
+        });
+        return this;
+    }
+
 }

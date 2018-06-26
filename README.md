@@ -12,7 +12,7 @@ repositories {
 ```java
 dependencies {
 	...
-	compile 'com.github.kasra-sh:esputils:1.0.0'
+	compile 'com.github.kasra-sh:esputils:1.9.0'
 }
 ```
 ####
@@ -63,3 +63,6 @@ ArrayList<MyClass> myObjectList = Eson.loadArray(json, MyClass.class);
 #### An easy way to pass objects/events between classes
  - ##### Can be used instead of *UGLY* callbacks or for passing objects in multithreaded applications!
  - ##### Define subscribers by ObjectType/Tag/Id, Tag and Id can be used even without passing an object for just posting an event!
+
+## 4. { EReqt } *(New)*
+#### Easy Asynchronous Http Requests

@@ -15,7 +15,7 @@ public class EReqt {
         this.retries = retries;
     }
 
-    public EReqt make(int poolSize, int timeout_ms, int retries) {
+    public static EReqt make(int poolSize, int timeout_ms, int retries) {
         return new EReqt(poolSize, timeout_ms, retries);
     }
 

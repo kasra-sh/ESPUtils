@@ -20,6 +20,7 @@ public class ThreadPoolCompatExecutor implements Executor, Closeable {
             threads[i] = new Thread(workers[i]);
             threads[i].setName("TPCWorker-" + i);
             threads[i].setDaemon(true);
+            threads[i].start();
         }
     }
 

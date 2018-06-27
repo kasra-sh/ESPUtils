@@ -27,7 +27,7 @@ public class Test {
             e.printStackTrace();
         }
         System.out.println(Eson.generate(new FixResponse(), 3));
-        System.out.println();
+//        System.out.println();
         System.out.println(new EsonObject().put("aAbBcCdD  \t\u001b",23432).toString(5));
     }
 

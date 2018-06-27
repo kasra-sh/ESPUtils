@@ -18,6 +18,10 @@ public class Test {
 
     Test() {
         try {
+            EReqt.getDefault().enqueue(
+                    ERequest.get("https://localhost/").acceptInsecureSSL(),
+                    result -> System.out.println(result.bodyStr())
+            );
             Thread.sleep(10000);
         } catch (InterruptedException e) {
             e.printStackTrace();

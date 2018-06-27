@@ -31,6 +31,7 @@ public class Test {
         System.out.println(new EsonObject().put("aAbBcCdD  \t\u001b",23432).toString(5));
     }
 
+
     public static class FixResponse {
         @EsonField(name = "myname")
         private String name = "Kasra";

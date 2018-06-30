@@ -17,18 +17,12 @@ public class Test {
     }
 
     Test() {
-        try {
-            EReqt.getDefault().enqueue(
-                    ERequest.get("https://localhost/").acceptInsecureSSL(),
-                    result -> System.out.println(result.bodyStr())
-            );
-            Thread.sleep(10000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        EReqt.getDefault().enqueue(
+                ERequest.get("https://localhost/").acceptInsecureSSL(),
+                result -> System.out.println(result.bodyStr())
+        );
         System.out.println(Eson.generate(new FixResponse(), 3));
-//        System.out.println();
-        System.out.println(new EsonObject().put("aAbBcCdD  \t\u001b",23432).toString(5));
+        System.out.println(new EsonObject().put("aAbBcCdD  \t\u001b", 23432).toString(5));
     }
 
 
@@ -38,7 +32,7 @@ public class Test {
         private String fname = "Shamsaei";
         private int age = 24;
         @EsonField(name = "dates", arrayType = Date.class)
-        private ArrayList<Date> dates = new ArrayList<>(Arrays.asList(Date.from(Instant.now()),Date.from(Instant.now())));
+        private ArrayList<Date> dates = new ArrayList<>(Arrays.asList(Date.from(Instant.now()), Date.from(Instant.now())));
 
         public FixResponse() {
         }

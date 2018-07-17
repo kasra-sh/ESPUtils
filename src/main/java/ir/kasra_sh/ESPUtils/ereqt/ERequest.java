@@ -249,7 +249,7 @@ public class ERequest {
         return this;
     }
 
-    public ERequest progress(ProgressListener listener) {
+    public ERequest progress(final ProgressListener listener) {
         request.progress(new HttpRequest.UploadProgress() {
             @Override
             public void onUpload(long uploaded, long total) {

@@ -26,7 +26,7 @@ public class EReqt {
         return def;
     }
 
-    public EReqt enqueue(ERequest request, ResponseListener listener) {
+    public EReqt enqueue(final ERequest request, final ResponseListener listener) {
         executor.execute(new Runnable() {
             @Override
             public void run() {

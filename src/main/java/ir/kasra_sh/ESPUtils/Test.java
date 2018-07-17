@@ -2,6 +2,8 @@ package ir.kasra_sh.ESPUtils;
 
 import ir.kasra_sh.ESPUtils.ereqt.EReqt;
 import ir.kasra_sh.ESPUtils.ereqt.ERequest;
+import ir.kasra_sh.ESPUtils.ereqt.RequestResult;
+import ir.kasra_sh.ESPUtils.ereqt.ResponseListener;
 import ir.kasra_sh.ESPUtils.eson.Eson;
 import ir.kasra_sh.ESPUtils.eson.EsonField;
 import ir.kasra_sh.ESPUtils.eson.EsonObject;
@@ -19,7 +21,12 @@ public class Test {
     Test() {
         EReqt.getDefault().enqueue(
                 ERequest.get("https://localhost/").acceptInsecureSSL(),
-                result -> System.out.println(result.bodyStr())
+                new ResponseListener() {
+                    @Override
+                    public void onResponse(RequestResult result) {
+                        System.out.println(result.bodyStr());
+                    }
+                }
         );
         System.out.println(Eson.generate(new FixResponse(), 3));
         System.out.println(new EsonObject().put("aAbBcCdD  \t\u001b", 23432).toString(5));

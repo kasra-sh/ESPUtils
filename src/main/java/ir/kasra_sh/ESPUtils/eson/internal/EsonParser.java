@@ -67,7 +67,7 @@ public class EsonParser {
                 } else if (lastToken.getType() == TokenType.ARR_START) {
                     object.put(key, getArray());
                 }
-
+//                System.out.println("BEFORE: "+lastToken.getStr());
                 lastToken = getCommaOrObjectEnd();
                 ULog.d("LAST", lastToken.getStr());
                 if (lastToken.getType() == TokenType.OBJ_END) {
@@ -174,7 +174,7 @@ public class EsonParser {
 //                            System.out.println("put double");
                             object.put(key, Double.parseDouble(lastToken.getStr()));
                         } catch (Exception e3){
-                            ULog.e("EsonParser","What the heck is this? :( -> "+lastToken.getStr());
+                            ULog.e("EsonParser","Wtf? :( -> "+lastToken.getStr());
                         }
                     }
                 }

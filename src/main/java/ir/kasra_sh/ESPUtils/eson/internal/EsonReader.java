@@ -254,7 +254,6 @@ public class EsonReader {
             reader.skip(1);
         }
         while (!reader.finished()) {
-
             if (reader.getCur() == '\0') {
                 throw new JSONStringFormatException("EOF @ "+reader.getCursor());
             }
@@ -263,6 +262,7 @@ public class EsonReader {
                     StringBuilder esc = new StringBuilder();
                     esc.setLength(0);
                     esc.append("\\").append((char)reader.peekNext());
+//                    System.out.println("Escape : "+esc+" @"+reader.getCursor());
                     if (reader.peekNext() == 'u') {
                         reader.skip(2);
                         for (int i = 0; i < 4; i++) {
@@ -274,9 +274,14 @@ public class EsonReader {
                             reader.skip(1);
                         }
                         mAppendToken(parseUnicodeEscaped(esc.toString()));
+                        continue;
                     } else {
+//                        System.out.println("BEF "+(char) reader.getCur());
                         reader.skip(2);
+//                        System.out.println("AF "+ (char) reader.getCur());
+//                        System.out.println("ESCAPED: "+esc.toString());
                         mAppendToken(parseEscaped(esc.toString()));
+                        continue;
                     }
                 }
 
